@@ -17,7 +17,7 @@
         <nav class="flex justify-around items-center border-b-1 pb-5 border-gray-300">
           <img class="w-16" src="./assets/Group.png" alt="" />
           <div>
-            <h1 class="text-3xl font-bold">$ 4500</h1>
+            <h1 class="text-3xl font-bold">$ <span id="mainBalance"> 4500 </span> </h1>
             <p class="border rounded p-1">available balance</p>
           </div>
           <button class="btn">Logout</button>
@@ -55,6 +55,35 @@
                 </div>
                  
             </div>
+
+
+            <section>
+                <h2>Add Money</h2>
+                 <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <div class="card-body">
+        <select class="select">
+  <option disabled selected>Select A Bank</option>
+  <option>Bikash</option>
+  <option>Nagad</option>
+  <option>DBBL</option>
+</select>
+        <fieldset class="fieldset">
+          <label class="label">Bank Account Number</label>
+          <input value="01633581574" id="accountNumber" type="number" class="input" placeholder="Enter 11 digit account number" />
+          <label class="label">Amount to Add</label>
+          <input id="amount" type="number" class="input" placeholder="Add Amount to withdraw" />
+          <label class="label">Pin Number</label>
+          <input id="pin" type="text" class="input" placeholder="Enter 4 digit pin number" />
+          
+          <button id="addMoney" class="btn bg-blue-500 text-white border-none mt-4">Add Money</button>
+        </fieldset>
+      </div>
+    </div>
+
+            </section>
+
+
+
         </section>
 
 
@@ -62,5 +91,6 @@
 
 
     </section>
+    <script src="./script/addMoney.js"></script>
   </body>
 </html>
